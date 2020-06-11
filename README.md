@@ -215,7 +215,7 @@ With issue#12, <strong>VS2017</strong> is also supported.
 ```shell
 mkdir build
 cd build
-conan install .. --build missing
+conan install .. --build missing -s compiler.libcxx=libstdc++11
 cmake ..
 cmake --build . -j
 ```
